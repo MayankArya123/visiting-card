@@ -4,6 +4,10 @@
     
 }
 
+/* html{
+    font-size: 20px;
+} */
+
 body{
     width: 100vw;
     height: 100vh;
@@ -13,8 +17,10 @@ body{
 }
 
 .card{
+    max-width: 700px;
+    max-height: 600px;
     width: 42%;
-    height: 59%;
+    height: auto;
    
 
     background-color: whitesmoke;
@@ -100,3 +106,125 @@ body{
     /* border: 3px solid blueviolet; */
 }
 
+
+@media screen and (max-width: 8000px) and (min-width: 800px) {
+
+    .card{
+        width: 80%;
+        
+    }
+  
+  
+  }
+
+@media screen and (max-width: 800px) and (min-width: 0px) {
+
+  .card{
+      width: 90%;
+      
+  }
+
+
+}
+
+@media screen and (max-width: 580px) and (min-width: 0px) {
+
+    .first-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .second-section {
+        flex-direction: column;
+    }
+
+    .person-image {
+        margin-top: 2%;
+         margin-left:0% ;
+        width: 8rem;
+        height: 6rem;
+      
+    }
+
+    .second-section .line {
+        margin-top: 5%;
+        width: 90%;
+       }
+
+    .company-name {
+        text-align: center;
+        width: 80%;
+        margin-left: 0%;
+        margin-top: 2%;
+        padding-right: 2%;
+        color: brown;
+    }
+
+  .card{
+      width: 90%;
+  }
+
+ .company-name h2{
+font-size: 1.2rem;
+   }
+
+ .company-name h4{
+font-size: 1rem;
+   }
+
+   .second-section .about-person h4 {
+    margin-top: 2%;
+    line-height: 1.2rem;
+    font-size: 1rem;
+}
+
+.second-section .about-person h2 {
+    font-size: 1.9rem;
+}
+
+.second-section {
+    margin-top: 5%;
+    margin-left: 5%;
+ 
+}
+
+}
+
+@media screen and (max-width: 300px) and (min-width: 0px) {
+
+    .third-section .connect {
+        margin-top: 1.5%;
+    }
+
+    .company-name h2{
+        font-size: 1rem;
+           }
+        
+         .company-name h4{
+        font-size: 0.8rem;
+           }
+        
+           .second-section .about-person h4 {
+            margin-top: 2%;
+            line-height: 1.1rem;
+            font-size: 0.8rem;
+        }
+        
+        .second-section .about-person h2 {
+            font-size: 1.7rem;
+        }
+
+        .person-image {
+            margin-top: 2%;
+             margin-left:0% ;
+            background-image: url('./person-image.jpg');
+            border-radius: 50%;
+            width: 6rem;
+            height: 4rem;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            /* border: 3px solid blueviolet; */
+        }
+
+}
