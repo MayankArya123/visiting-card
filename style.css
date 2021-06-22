@@ -4,9 +4,15 @@
     
 }
 
+<<<<<<< HEAD
 /* html{
     font-size: 20px;
 } */
+=======
+html{
+  font-size:18px;   
+}
+>>>>>>> d104ef7c898009c0875e913096b3aea973fae573
 
 body{
     width: 100vw;
